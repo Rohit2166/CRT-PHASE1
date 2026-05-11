@@ -171,9 +171,80 @@ using namespace std;
 //     return 0;
 // }
 
+//  two pointer 
+//  two sum
+
+// class solution{
+//     public:
+//     int twosum(vector<int> &arr,int target){
+//         int l=0;
+//         int r=arr.size()-1;
+//         while(l<r){
+//             if(arr[l]+arr[r]==target){
+//                 cout<<l<<" "<<r<<endl;
+//                 return 1;
+//             }
+//             else if(arr[l]+arr[r]>target){
+//                 r--;
+//             }
+//             else{
+//                 l++;
+//             }
+//         }
+//         return -1;
+//     }
+// };
+// int main(){
+//     solution s;
+//     int n;
+//     cout<<"enter size ";
+//     cin>>n;
+//     vector<int>arr(n);
+//     for(int i=0;i<n;i++){
+//         cout<<"enter element "<<i<<" ";
+//         cin>>arr[i];
+//     }
+//     int target;
+//     cout<<" enter target ";
+//     cin>>target;
+//     s.twosum(arr,target);
+// }
+// time complexity of two sum is O(n) and space complexity is O(1)
+
+// time complexity of two sum using brute force is O(n^2) and space complexity is O(1)
+
+// class solution{
+//     public:
+//     int twosum(vector<int> &arr,int target){
+//         int l=0;
+//         int r=arr.size()-1;
+//         for(int i=0;i<arr.size();i++){
+//            for(int j=i+1;j<arr.size();j++){
+//                if(arr[i]+arr[j]==target){
+//                    cout<<i<<" "<<j<<endl;
+//                    return 1;
+//                }
+//            }
+//     }
+// }
+// };
+// int main(){
+//     solution s;
+//     int n;
+//     cout<<"enter size ";
+//     cin>>n;
+//     vector<int>arr(n);
+//     for(int i=0;i<n;i++){
+//         cout<<"enter element "<<i<<" ";
+//         cin>>arr[i];
+//     }
+//     int target;
+//     cout<<" enter target ";
+//     cin>>target;
+//     s.twosum(arr,target);
+// }
+
 // 
-
-
 
 
 
