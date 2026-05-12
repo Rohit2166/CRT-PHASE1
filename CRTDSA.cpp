@@ -8,7 +8,6 @@ using namespace std;
 
 // ARRAY 
 // input in array
-
 // int main(){
 //     int n;
 //     cout<<"enter size  ";
@@ -23,7 +22,6 @@ using namespace std;
 // }
 
 // reverse of an array
-
 // int main(){
 //     int n;
 //     cout<<"enter size  ";
@@ -38,7 +36,6 @@ using namespace std;
 // }
 
 // reverse of an array using function
-
 // void reverse(int arr[],int n){
 //     int l=0;
 //     int r=n-1;
@@ -66,7 +63,6 @@ using namespace std;
 // }
 
 // character array
-
 // int main(){
 //     char arr[5];
 //     for(int i=0;i<5;i++){
@@ -78,7 +74,6 @@ using namespace std;
 // }
 
 // Sum of array elements
-
 // int main(){
 //     int n;
 //     cout<<"enter size  ";
@@ -96,7 +91,6 @@ using namespace std;
 
 // Bubble sort in c++
 // time complexity of bubble sort is O(n^2) and space complexity is O(1)
-
 // int main(){
 //     int a;
 //     cin>>a;
@@ -120,7 +114,6 @@ using namespace std;
 
 // Selection sort in c++
 // time complexity of selection sort is O(n^2) and space complexity is O(1)
-
 // int main(){
 //     int a;
 //     cin>>a;
@@ -148,7 +141,6 @@ using namespace std;
 
 // Insertion sort in c++
 // time complexity of insertion sort is O(n^2) and space complexity is O(1)
-
 // int main(){
 //     int a;
 //     cin>>a;
@@ -173,7 +165,6 @@ using namespace std;
 
 //  two pointer 
 //  two sum
-
 // class solution{
 //     public:
 //     int twosum(vector<int> &arr,int target){
@@ -212,7 +203,6 @@ using namespace std;
 // time complexity of two sum is O(n) and space complexity is O(1)
 
 // time complexity of two sum using brute force is O(n^2) and space complexity is O(1)
-
 // class solution{
 //     public:
 //     int twosum(vector<int> &arr,int target){
@@ -246,7 +236,6 @@ using namespace std;
 
 // Linear Search in c++ 
 // time complexity of linear search is O(n) and space complexity is O(1)
-
 // int main(){
 //     int arr[5]={1,3,5,6,8};
 //     int target;
@@ -262,7 +251,6 @@ using namespace std;
 
 // Binary Search in c++
 // time complexity of binary search is O(log n) and space complexity is O(1)
-
 // int main(){
 //     int arr[5]={1,3,5,6,9};
 //     int target;
@@ -287,7 +275,6 @@ using namespace std;
 
 // Find First and Last Position of Element in Sorted Array leetcode 34
 // time complexity of this problem is O(log n) and space complexity is O(1)
-
 // class Solution {
 // public:
 //     vector<int> searchRange(vector<int>& nums, int target) {
@@ -374,9 +361,7 @@ using namespace std;
 //     cout<<ans[0]<<" "<<ans[1]<<endl;
 // }
 
-
 // brute force approach of this problem is O(n) and space complexity is O(1)
-
 // int main(){
 //     int arr[5]={1,3,7,7,9};
 //     int target;
@@ -398,10 +383,8 @@ using namespace std;
 //         cout<<first<<" "<<last<<endl;
 // };
 
-
 // 35. Search Insert Position leetcode
 // time complexity of this problem is O(log n) and space complexity is O(1)
-
 // int main(){
 //     int arr[5]={2,4,5,6,8};
 //     int target;
@@ -425,7 +408,23 @@ using namespace std;
 //     return 0;
 // }
 
+// sum of elements of 2d array
+// int main(){
+//     int arr[3][3];
+//     for(int i=0;i<3;i++){
+//         for(int j=0;j<3;j++){
+//             cin>>arr[i][j];
+//         }   
+//     }
+//     int sum=0;
+//     for(int i=0;i<3;i++){
+//         for(int j=0;j<3;j++){
+//             sum+=arr[i][j];
+//             cout <<arr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
+//     cout<<"Sum: "<<sum<<endl;
+// }
 
 // 
-
-
