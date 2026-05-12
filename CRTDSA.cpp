@@ -285,7 +285,147 @@ using namespace std;
 //     return -1;
 // }
 
-// 
+// Find First and Last Position of Element in Sorted Array leetcode 34
+// time complexity of this problem is O(log n) and space complexity is O(1)
 
+// class Solution {
+// public:
+//     vector<int> searchRange(vector<int>& nums, int target) {
+//         int startingPosition = -1, endingPosition = -1;
+//         int n = nums.size();
+//         for(int i=0; i<n; i++){
+//             if(nums[i] == target){
+//                 startingPosition = i;
+//                 break;
+//             }
+//         }
+//         for(int i=n-1; i>=0; i--){
+//             if(nums[i] == target){
+//                 endingPosition = i;
+//                 break;
+//             }
+//         }
+//         return {startingPosition, endingPosition};
+//     }
+// };
+// class Solution {
+//     int lowerbound(vector<int>& nums, int target) {
+//         int s = 0;
+//         int l = nums.size() - 1;
+//         int ans = -1;
+//         while (s <= l) {
+//             int mid = s + (l - s) / 2;
+//             if (nums[mid] == target) {
+//                 ans = mid;
+//                 l = mid - 1;   // search left
+//             }
+//             else if (nums[mid] > target) {
+//                 l = mid - 1;
+//             }
+//             else {
+//                 s = mid + 1;
+//             }
+//         }
+//         return ans;
+//     }
+//     int upperbound(vector<int>& nums, int target) {
+//         int s = 0;
+//         int l = nums.size() - 1;
+//         int ans = -1;
+//         while (s <= l) {
+//             int mid = s + (l - s) / 2;
+//             if (nums[mid] == target) {
+//                 ans = mid;
+//                 s = mid + 1;   // search right
+//             }
+//             else if (nums[mid] > target) {
+//                 l = mid - 1;
+//             }
+//             else {
+//                 s = mid + 1;
+//             }
+//         }
+//         return ans;
+//     }
+// public:
+//     vector<int> searchRange(vector<int>& nums, int target) {
+//         vector<int> arr;
+//         int first = lowerbound(nums, target);
+//         int last = upperbound(nums, target);
+//         arr.push_back(first);
+//         arr.push_back(last);
+//         return arr;
+//     }
+// };
+// int main(){
+//     Solution s;
+//     int n;
+//     cout<<"enter size ";
+//     cin>>n;
+//     vector<int>arr(n);
+//     for(int i=0;i<n;i++){
+//         cout<<"enter element "<<i<<" ";
+//         cin>>arr[i];
+//     }
+//     int target;
+//     cout<<" enter target ";
+//     cin>>target;
+//     vector<int> ans = s.searchRange(arr, target);
+//     cout<<ans[0]<<" "<<ans[1]<<endl;
+// }
+
+
+// brute force approach of this problem is O(n) and space complexity is O(1)
+
+// int main(){
+//     int arr[5]={1,3,7,7,9};
+//     int target;
+//     cin>>target;
+//     int first=-1;
+//     int last=-1;
+//     for(int i=0;i<5;i++){
+//         if(arr[i]==target){
+//             first=i;
+//             break;
+//         }
+//     }
+//         for(int j=4;j>=0;j--){
+//             if(arr[j]==target){
+//                 last=j;
+//                 break;
+//             }
+//         }
+//         cout<<first<<" "<<last<<endl;
+// };
+
+
+// 35. Search Insert Position leetcode
+// time complexity of this problem is O(log n) and space complexity is O(1)
+
+// int main(){
+//     int arr[5]={2,4,5,6,8};
+//     int target;
+//     cin>>target;
+//     int l=0;
+//     int r=4;
+//     while(l<=r){
+//         int mid = l+(r-l)/2;
+//         if(arr[mid]==target){
+//             cout<< mid;
+//             break;
+//         }
+//         else if(arr[mid]>target){
+//             r=mid-1;
+//         }
+//         else{
+//             l=mid+1;
+//         }
+//     }
+//     cout<< l;
+//     return 0;
+// }
+
+
+// 
 
 
