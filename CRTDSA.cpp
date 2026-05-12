@@ -244,6 +244,47 @@ using namespace std;
 //     s.twosum(arr,target);
 // }
 
+// Linear Search in c++ 
+// time complexity of linear search is O(n) and space complexity is O(1)
+
+// int main(){
+//     int arr[5]={1,3,5,6,8};
+//     int target;
+//     cin>>target;
+//     for(int i=0;i<5;i++){
+//         if(arr[i]==target){
+//             cout<<"Element found at index "<<i<<endl;
+//             return 0;
+//         }
+//     }
+//     return -1;
+// }
+
+// Binary Search in c++
+// time complexity of binary search is O(log n) and space complexity is O(1)
+
+// int main(){
+//     int arr[5]={1,3,5,6,9};
+//     int target;
+//     cin>>target;
+//     int l=0;
+//     int r=4;
+//     while(l<=r){
+//         int mid = l+(r-l)/2;
+//         if(arr[mid]==target){
+//             cout<<"element found at " <<mid<<endl;
+//             return 0;
+//         }
+//         else if(arr[mid]>target){
+//             r=mid-1;
+//         }
+//         else{
+//             l=mid+1;
+//         }
+//     }
+//     return -1;
+// }
+
 // 
 
 
