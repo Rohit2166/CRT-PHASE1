@@ -427,4 +427,34 @@ using namespace std;
 //     cout<<"Sum: "<<sum<<endl;
 // }
 
+// print 2 table with recursion
+// int print(int a,int n){
+//     // base case
+//     if(a>n){ 
+//         return 0;
+//     }
+//     cout<<2*a<<endl;
+//     print(a+1,n);
+//     return 0;
+// };
+// int main(){
+//     int a=1;
+//     print(a,10);
+//     cout<<endl;
+// }
+
+// sum of digits question gfg 
+// int sumofdigit(int n){
+//     // base case
+//     if(n==0){
+//         return 0;
+//     }
+//     int sum=n%10;
+//     return sum + sumofdigit(n/10);
+// };
+// int main(){
+//     cout << sumofdigit(292) << endl; 
+// }
+
 // 
+
