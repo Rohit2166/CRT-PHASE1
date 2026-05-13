@@ -456,5 +456,25 @@ using namespace std;
 //     cout << sumofdigit(292) << endl; 
 // }
 
+// reverse an array with recursion
+// int reverserray(int arr[],int s, int e){
+//     // base case
+//     if(s>=e){
+//         return 0;
+//     }
+//     swap(arr[s],arr[e]);
+//     reverserray(arr,s+1,e-1);
+//     return 0;
+// };
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     int n=5;
+//     reverserray(arr,0,n-1);
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i]<<" ";
+//     }
+//     cout<<endl;
+// }
+
 // 
 
