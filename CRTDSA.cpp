@@ -476,5 +476,190 @@ using namespace std;
 //     cout<<endl;
 // }
 
-// 
+// LINKED LIST 
+// print linked list
+//  class ListNode{
+//     public:
+//      int val;
+//      ListNode* next;
+//      ListNode(int v){
+//          val=v;
+//          next=NULL;
+//      }
+//  };
+//  void printlist(ListNode* head){
+//     ListNode* start;
+//     ListNode* end;
+//    ListNode* temp=head;
+//    while(temp!=NULL){
+//     cout<<temp->val<< " -> ";
+//     temp=temp->next;
+//    }
+//  };
+// //  deleting node
+// void deletenode( ListNode* head){  
+// };
+//  int main(){
+//     ListNode* head;
+//     head = NULL;
+//      ListNode* n1=new ListNode(1);
+//      ListNode* n2=new ListNode(2);
+//      ListNode* n3=new ListNode(3);
+//      ListNode* n4=new ListNode(4);
+//      head=n1;
+//      n1->next=n2;
+//      n2->next=n3;
+//      n3->next=n4;
+//      printlist(head);
+//     return 0;
+//  }
 
+//  Stack in c++
+// Basic code of stack in c++
+// class solution{
+//    stack<int>st;
+//    public:
+//    int push_back(int a){
+//       if(!st.empty()){
+//          cout<<"stack is full"<<endl;
+//       }
+//       st.push(a);
+//       return 0;
+//    }
+//    int pop_back(int a){
+//       if(!st.empty()){
+//          cout<<"stack is empty"<<endl;
+//       }
+//       st.pop();
+//       return 0;
+//    }
+//    int top(){
+//       if(st.empty()){
+//          cout<<"stack is empty"<<endl;
+//          return -1;
+//       }
+//       else{
+//          cout<<st.top()<<endl;
+//          return 0;
+//       }
+//    }
+// };
+// int main(){
+//       solution s;
+//       s.push_back(1);
+//       s.push_back(2); 
+//       s.push_back (3);
+//       s.top();
+//       s.push_back(4);
+//        s.top();
+//       s.pop_back(3);
+//        s.top();   
+// };
+
+// implementation stack using array
+// class solution{
+//    int arr[10];
+//    int topindex;
+//    public:
+//    solution(){
+//       topindex=-1;
+//    }
+//    void push_back(int a){
+//       if(topindex==9){
+//          cout<<"full";
+//       }
+//       else{
+//          topindex++;
+//          arr[topindex]=a;
+//       }
+//    }
+//    void pop_back(){
+//       if(topindex==-1){
+//          cout<<"empty";
+//       }
+//       else{
+//          topindex--;
+//       }
+//       }
+//       int top(){
+//          if(topindex==-1){
+//             cout<<"stack is empty";
+//             return -1;
+//          }
+//          else{
+//             cout<<arr[topindex]<<endl;  
+//          }
+//       }
+//    };
+//    int main(){
+//       solution s;
+//       s.push_back(1);
+//       s.push_back(2);
+//       s.push_back(3);
+//       s.top();
+//       s.push_back(4);
+//       s.top();
+//       s.pop_back();
+//       s.top();
+//    };
+
+// implementation of stack using linked list
+// class solution{
+//    class Node{
+//       public:
+//       int data;
+//       Node* next;
+//       Node(int v){
+//          data=v;
+//          next=NULL;
+//       }
+//    };
+//    Node* head;
+//    public:
+//    solution(){
+//       head=NULL;
+//    }
+//    void push_back(int a){
+//       Node* newnode=new Node(a);
+//       if(head==NULL){
+//          head=newnode;
+//       }
+//       else{
+//          newnode->next=head;
+//          head=newnode;
+//       }
+//    }
+//    void pop_back(){
+//       if(head==NULL){
+//          cout<<"stack is empty"<<endl;
+//       }
+//       else{
+//          Node* temp=head;
+//          head=head->next;
+//          delete temp;
+//       }
+//    }
+//    void top(){
+//       if(head==NULL){
+//          cout<<"stack is empty"<<endl;
+//       }
+//       else{
+//          cout<<head->data<<endl;  
+//       }
+//    }
+// };
+// int main(){
+//    solution s;
+//    s.push_back(2);
+//    s.push_back(3);
+//    s.push_back(4);
+//    s.top();
+//    s.push_back(5);
+//    s.top();
+//    s.pop_back();
+//    s.top();
+//    s.pop_back();
+//    s.top();
+// };
+
+// Queue in c++
