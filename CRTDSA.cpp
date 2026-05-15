@@ -662,4 +662,42 @@ using namespace std;
 //    s.top();
 // };
 
-// Queue in c++
+// valid parenthesis leetcode 20
+// time complexity of this problem is O(n) and space complexity is O(n)
+class solution{
+   public:
+   bool isvalid(string s){
+      stack<char>st;
+      for(int i=0;i<s.length();i++){
+         char ch=s[i];
+         if(ch=='(' || ch=='{' || ch=='['){
+            st.push(ch);
+         }
+         else{
+            if(st.empty()){
+               return false;
+            }
+            char top=st.top();
+            st.pop();
+            if((ch==')' && top!='(') || (ch=='}' && top!='{') || (ch==']' && top!='[')){
+               return false;
+            }
+         }
+      }
+      return st.empty();
+   }
+};
+int main(){
+   solution s;
+   string str;
+   cout<<"enter string ";
+   cin>>str;
+   if(s.isvalid(str)){
+      cout<<"valid parenthesis"<<endl;
+   }
+   else{
+      cout<<"invalid parenthesis"<<endl;
+   }
+return 0;
+};
+
